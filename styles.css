@@ -22,3 +22,17 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
+
+/* Icon*/
+
+.icon {
+  width: 57px;
+  height: 57px;
+}
+
+@media screen and (min-width: 769px) {
+  .icon {
+    width: 67px;
+    height: 67px;
+  }
+}
