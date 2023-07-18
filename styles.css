@@ -1,0 +1,24 @@
+:root {
+  --primary-color-red: hsl(0, 78%, 62%);
+  --primary-color-cyan: hsl(180, 62%, 55%);
+  --primary-color-orange: hsl(34, 97%, 64%);
+  --primary-color-blue: hsl(212, 86%, 64%);
+  --very-darkBlue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-lightGrey: hsl(0, 0%, 98%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
