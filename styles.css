@@ -84,6 +84,7 @@ p {
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
   background: #fff;
   min-width: 31rem;
+  max-width: 35rem;
   padding: 2.7rem;
 }
 
@@ -122,18 +123,27 @@ p {
   display: grid;
   justify-content: center;
   align-content: center;
+  max-width: 1110px;
+  row-gap: 2rem;
+}
+
+/* .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.grid-item-one,
+.grid-item-four {
+  align-self: center;
+}
+
+.grid-items {
+  display: grid;
   row-gap: 2rem;
 }
 
 @media screen and (min-width: 768px) {
-  .grid-3x2 {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    column-gap: 2rem;
-  }
-}
-
-@media screen and (min-width: 1024px) {
   .grid-3x1 {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
