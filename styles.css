@@ -81,10 +81,23 @@ p {
 
 .card {
   border-radius: 8px;
-  border-top: 3px solid var(--primary-color-blue);
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
   background: #fff;
-  width: 31rem;
+  min-width: 31rem;
   padding: 2.7rem;
+}
+
+.card--blue {
+  border-top: 3px solid var(--primary-color-blue);
+}
+.card--orange {
+  border-top: 3px solid var(--primary-color-orange);
+}
+.card--cyan {
+  border-top: 3px solid var(--primary-color-cyan);
+}
+.card--red {
+  border-top: 3px solid var(--primary-color-red);
 }
 
 /* Icon*/
@@ -101,5 +114,29 @@ p {
   .icon {
     width: 67px;
     height: 67px;
+  }
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  row-gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .grid-3x2 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid-3x1 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 2rem;
   }
 }
