@@ -30,7 +30,7 @@ body {
 main {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   height: 100vh;
 }
 
@@ -123,15 +123,10 @@ p {
   display: grid;
   justify-content: center;
   align-content: center;
+
   max-width: 1110px;
   row-gap: 2rem;
 }
-
-/* .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
 
 .grid-item-one,
 .grid-item-four {
@@ -140,13 +135,13 @@ p {
 
 .grid-items {
   display: grid;
-  row-gap: 2rem;
+  row-gap: 3rem;
 }
 
 @media screen and (min-width: 768px) {
   .grid-3x1 {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    column-gap: 2rem;
+    column-gap: 3rem;
   }
 }
