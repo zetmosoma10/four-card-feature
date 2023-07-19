@@ -19,10 +19,18 @@ html {
 }
 
 body {
+  background: var(--very-lightGrey);
   margin: 0;
   font-family: "Poppins", sans-serif;
   color: var(--grayish-blue);
   font-size: 1.5rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 h1,
@@ -37,6 +45,13 @@ h1 {
 
 h2 {
   font-size: 2rem;
+  margin: 0;
+}
+
+p {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  margin-bottom: 3.2rem;
 }
 
 .text-header {
@@ -44,8 +59,21 @@ h2 {
   font-weight: 200;
 }
 
-/* Icon*/
+/* Card */
 
+.card {
+  border-radius: 8px;
+  border-top: 3px solid var(--primary-color-blue);
+  background: #fff;
+  width: 31rem;
+  padding: 2.7rem;
+}
+
+/* Icon*/
+.icon-container {
+  display: flex;
+  justify-content: flex-end;
+}
 .icon {
   width: 57px;
   height: 57px;
