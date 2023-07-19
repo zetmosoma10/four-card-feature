@@ -24,6 +24,7 @@ body {
   font-family: "Poppins", sans-serif;
   color: var(--grayish-blue);
   font-size: 1.5rem;
+  text-align: center;
 }
 
 main {
@@ -41,6 +42,8 @@ h2,
 
 h1 {
   font-size: 2.4rem;
+  margin-top: 0;
+  margin-bottom: 1.6rem;
 }
 
 h2 {
@@ -57,6 +60,21 @@ p {
 .text-header {
   font-size: 2.4rem;
   font-weight: 200;
+  margin: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 3.6rem;
+  }
+
+  .text-header {
+    font-size: 3.6rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
 }
 
 /* Card */
